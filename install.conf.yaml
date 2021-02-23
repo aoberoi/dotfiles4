@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+# TODO: local stuff for git, ssh
+
+- link:
+    ~/.profile: profile
+    ~/.zshenv: zsh/.zshenv
+    ~/.zshrc: zsh/.zshrc
+    ~/.bash_profile: bash/.bash_profile
+    ~/.bashrc: bash/.bashrc
+    ~/.gitconfig: git/.gitconfig
+    ~/.gitignore_global: git/.gitignore_global
+    ~/.dotfiles: ''
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
