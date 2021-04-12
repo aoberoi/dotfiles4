@@ -21,3 +21,8 @@ if [ -d /usr/local/sbin ] ; then
     PATH="/usr/local/sbin:$PATH"
   fi
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# the following line has a script called "bash_completion" but it works in zsh too
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
