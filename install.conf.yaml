@@ -18,3 +18,9 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  -
+    command: ~/.dotfiles/macos.sh
+    description: Setting macOS defaults
+    stdin: true
+    stdout: true
+    stderr: true
