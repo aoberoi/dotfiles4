@@ -34,3 +34,8 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+
+# Initialize Pure prompt
+fpath+=$HOME/.dotfiles/pure
+autoload -U promptinit; promptinit
+prompt pure
