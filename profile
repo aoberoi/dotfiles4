@@ -11,6 +11,9 @@ if [ -d /usr/local/bin ] ; then
   fi
 fi
 
+# brew bash-completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
 if [ -d /usr/local/sbin ] ; then
   # This test is only available in bash, ksh, zsh, etc.
   # see: http://mywiki.wooledge.org/BashGuide/Practices#Bash_Tests
