@@ -6,3 +6,5 @@
 	excludesfile = /Users/ankur/.gitignore_global
 [alias]
 	lol = log --decorate --oneline --graph
+[init]
+	defaultBranch = main
